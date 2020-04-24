@@ -1,13 +1,7 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-
-# Dependency directories
-node_modules/
-
-# dotenv environment variables file
 .env
-
-#Idea files
-.idea/
+dist
+package-lock.json
+node_modules
+.idea
+.vscode
+*.log
