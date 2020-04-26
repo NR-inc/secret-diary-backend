@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/server",
     "clean": "rm -rf dist",
-    "build": "npm -s run clean && npm -s run generate && ls -la prisma && tsc",
+    "build": "npm -s run clean && npm -s run generate && cat prisma/migrations/20200427021727-init/schema.prisma && tsc",
     "generate": "npm -s run generate:prisma && npm -s run generate:nexus",
     "generate:prisma": "prisma generate",
     "generate:nexus": "ts-node --transpile-only src/schema",
