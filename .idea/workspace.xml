@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0b1b210e-9339-400c-84c9-55a53e7fe236" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/fullstack-tutorial" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1azOSILjppcCsZNVD46eXFBjQjR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../node-api" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/my-app" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b1b210e-9339-400c-84c9-55a53e7fe236" name="Default Changelist" comment="" />
+      <created>1587734953691</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587734953691</updated>
+      <workItem from="1587734956515" duration="3436000" />
+      <workItem from="1587768266492" duration="4532000" />
+      <workItem from="1587807896118" duration="2446000" />
+      <workItem from="1587813835607" duration="16250000" />
+      <workItem from="1587853093548" duration="640000" />
+      <workItem from="1587890857984" duration="2129000" />
+      <workItem from="1587893538447" duration="17544000" />
+    </task>
+    <task id="LOCAL-00001" summary="Init commit.">
+      <created>1587735012252</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587735012252</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Remove ignored files.">
+      <created>1587740729772</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587740729772</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/fullstack-tutorial" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Init commit." />
+    <MESSAGE value="Remove ignored files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove ignored files." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="678" y="344" width="635" height="416" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587895045527">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="678" y="344" width="635" height="416" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1587895045527" />
+    <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587742924989">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="726" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1587742924989" />
+    <state x="556" y="63" width="864" height="978" key="CommitChangelistDialog2" timestamp="1587740725350">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="556" y="63" width="864" height="978" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1587740725350" />
+    <state x="242" y="116" width="1482" height="872" key="DiffContextDialog" timestamp="1587739186110">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="242" y="116" width="1482" height="872" key="DiffContextDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1587739186110" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1587894602386">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1587894602386" />
+    <state width="1830" height="255" key="GridCell.Tab.0.bottom" timestamp="1587815289863">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="255" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1587815289863" />
+    <state width="1830" height="255" key="GridCell.Tab.0.center" timestamp="1587815289863">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="255" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1587815289863" />
+    <state width="1830" height="255" key="GridCell.Tab.0.left" timestamp="1587815289863">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="255" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1587815289863" />
+    <state width="1830" height="255" key="GridCell.Tab.0.right" timestamp="1587815289863">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="255" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1587815289863" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1587807107603">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1587807107603" />
+    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1587740863454">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="284" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1587740863454" />
+    <state x="631" y="275" width="724" height="554" key="find.popup" timestamp="1587921936989">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="631" y="275" width="724" height="554" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1587921936989" />
+    <state x="657" y="253" key="run.anything.popup" timestamp="1587753724666">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="657" y="253" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1587753724666" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1587824261803">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1587824261803" />
+  </component>
+</project>
