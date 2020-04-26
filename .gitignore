@@ -1,0 +1,7 @@
+.idea
+dist
+/src/generated
+/node_modules
+/*.env
+*.log
+package-lock.json
