@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/server",
     "clean": "rm -rf dist",
-    "build": "npm install && npm -s run clean && npm -s run generate && tsc",
+    "build": "npm -s run clean && npm -s run generate && tsc",
     "generate": "npm -s run generate:prisma && npm -s run generate:nexus",
     "generate:prisma": "prisma generate",
     "generate:nexus": "ts-node --transpile-only src/schema",
@@ -25,15 +25,16 @@
   },
   "homepage": "https://github.com/NR-inc/secret-diary-backend#readme",
   "dependencies": {
+    "@nexus/schema": "0.13.1",
     "@prisma/client": "^2.0.0-beta.3",
     "bcryptjs": "2.4.3",
+    "dotenv": "8.2.0",
     "graphql": "14.6.0",
     "graphql-shield": "5.7.3",
     "graphql-yoga": "1.18.3",
     "jsonwebtoken": "8.5.1",
     "nexus": "0.12.0",
-    "nexus-prisma": "0.12.0",
-    "@nexus/schema": "0.13.1"
+    "nexus-prisma": "0.12.0"
   },
   "devDependencies": {
     "@prisma/cli": "2.0.0-beta.2",

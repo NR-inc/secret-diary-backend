@@ -3,5 +3,6 @@ dist
 /src/generated
 /node_modules
 /prisma/.env
+.env
 *.log
 package-lock.json
