@@ -2,6 +2,6 @@
 dist
 /src/generated
 /node_modules
-/*.env
+/prisma/.env
 *.log
 package-lock.json
