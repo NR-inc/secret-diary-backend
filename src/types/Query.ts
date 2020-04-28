@@ -38,6 +38,6 @@ export const Query = queryType({
             },
         });
 
-        t.crud.categories();
+        // t.crud.categories();
     },
 });

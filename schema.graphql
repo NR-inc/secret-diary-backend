@@ -13,10 +13,6 @@ type Category {
   title: String!
 }
 
-input CategoryWhereUniqueInput {
-  id: Int
-}
-
 scalar DateTime
 
 type Mutation {
@@ -36,7 +32,6 @@ type Post {
 }
 
 type Query {
-  categories(after: CategoryWhereUniqueInput, before: CategoryWhereUniqueInput, first: Int, last: Int, skip: Int): [Category!]!
   myPosts(userId: Int!): [Post!]!
   profile: User
   publicPosts: [Post!]!
