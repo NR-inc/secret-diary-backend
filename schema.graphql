@@ -15,11 +15,7 @@ type Category {
 
 scalar DateTime
 
-type Mutation {
-  deletePost(id: Int!): Post
-  login(email: String!, password: String!): AuthPayload!
-  register(email: String!, firstName: String!, lastName: String!, password: String!): AuthPayload!
-}
+type Mutation
 
 type Post {
   created_at: DateTime!
@@ -31,11 +27,7 @@ type Post {
   user_id: Int!
 }
 
-type Query {
-  myPosts(userId: Int!): [Post!]!
-  profile: User
-  publicPosts: [Post!]!
-}
+type Query
 
 type User {
   avatar: String
