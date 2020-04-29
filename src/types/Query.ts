@@ -8,7 +8,7 @@ export const Query = queryType({
             nullable: true,
             resolve: (parent, args, ctx) => {
                 const userId = getUserId(ctx);
-
+                console.log('test');
                 return ctx.prisma.user.findOne({
                     where: {
                         id: Number(userId),
@@ -23,6 +23,8 @@ export const Query = queryType({
                 userId: intArg({ nullable: false }),
             },
             resolve: (parent, { userId }, ctx) => {
+                console.log('test');
+
                 return ctx.prisma.post.findMany({
                     where: { user_id: userId },
                 })
