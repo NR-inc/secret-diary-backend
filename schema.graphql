@@ -13,9 +13,17 @@ type Category {
   title: String!
 }
 
+input CategoryWhereUniqueInput {
+  id: Int
+}
+
 scalar DateTime
 
-type Mutation
+type Mutation {
+  deletePost(id: Int!): Post
+  login(email: String!, password: String!): AuthPayload!
+  register(email: String!, firstName: String!, lastName: String!, password: String!): AuthPayload!
+}
 
 type Post {
   created_at: DateTime!
@@ -27,7 +35,12 @@ type Post {
   user_id: Int!
 }
 
-type Query
+type Query {
+  categories(after: CategoryWhereUniqueInput, before: CategoryWhereUniqueInput, first: Int, last: Int, skip: Int): [Category!]!
+  myPosts(userId: Int!): [Post!]!
+  profile: User
+  publicPosts: [Post!]!
+}
 
 type User {
   avatar: String
