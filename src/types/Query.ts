@@ -34,7 +34,7 @@ export const Query = queryType({
             type: 'Post',
             resolve: (parent, args, ctx) => {
                 return ctx.prisma.post.findMany({
-                    where: {public: true},
+                    where: { public: true },
                 })
             },
         });
