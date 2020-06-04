@@ -13,6 +13,16 @@ type Category {
   title: String!
 }
 
+input CategoryCreateManyWithoutPostsInput {
+  connect: [CategoryWhereUniqueInput!]
+  create: [CategoryCreateWithoutPostsInput!]
+}
+
+input CategoryCreateWithoutPostsInput {
+  slug: String!
+  title: String!
+}
+
 input CategoryWhereUniqueInput {
   id: Int
 }
@@ -20,35 +30,66 @@ input CategoryWhereUniqueInput {
 scalar DateTime
 
 type Mutation {
+  createOnePost(data: PostCreateInput!): Post!
   deletePost(id: Int!): Post
   login(email: String!, password: String!): AuthPayload!
   register(email: String!, firstName: String!, lastName: String!, password: String!): AuthPayload!
 }
 
 type Post {
-  created_at: DateTime!
+  author: User!
+  createdAt: DateTime!
   id: Int!
   public: Boolean!
   text: String
   title: String!
-  updated_at: DateTime!
-  user_id: Int!
+  updatedAt: DateTime!
+}
+
+input PostCreateInput {
+  author: UserCreateOneWithoutPostsInput!
+  categories: CategoryCreateManyWithoutPostsInput
+  createdAt: DateTime
+  public: Boolean
+  text: String
+  title: String!
+  updatedAt: DateTime
 }
 
 type Query {
   categories(after: CategoryWhereUniqueInput, before: CategoryWhereUniqueInput, first: Int, last: Int, skip: Int): [Category!]!
-  myPosts(userId: Int!): [Post!]!
+  myPosts(authorId: Int!): [Post!]!
   profile: User
   publicPosts: [Post!]!
 }
 
 type User {
   avatar: String
-  created_at: DateTime!
+  canPostToday: Boolean!
+  createdAt: DateTime!
   email: String!
-  first_name: String!
+  firstName: String!
   id: Int!
-  last_name: String!
-  password: String!
-  updated_at: DateTime!
+  lastName: String!
+  updatedAt: DateTime!
+}
+
+input UserCreateOneWithoutPostsInput {
+  connect: UserWhereUniqueInput
+  create: UserCreateWithoutPostsInput
+}
+
+input UserCreateWithoutPostsInput {
+  avatar: String
+  createdAt: DateTime
+  email: String!
+  firstName: String!
+  lastName: String!
+  password: String
+  updatedAt: DateTime
+}
+
+input UserWhereUniqueInput {
+  email: String
+  id: Int
 }

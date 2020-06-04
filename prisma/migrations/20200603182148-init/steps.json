@@ -87,7 +87,7 @@
     {
       "tag": "CreateField",
       "model": "Category",
-      "field": "Post",
+      "field": "posts",
       "type": "Post",
       "arity": "List"
     },
@@ -97,7 +97,7 @@
         "path": {
           "tag": "Field",
           "model": "Category",
-          "field": "Post"
+          "field": "posts"
         },
         "directive": "relation"
       }
@@ -109,7 +109,7 @@
         "path": {
           "tag": "Field",
           "model": "Category",
-          "field": "Post"
+          "field": "posts"
         },
         "directive": "relation"
       },
@@ -212,78 +212,14 @@
     {
       "tag": "CreateField",
       "model": "Post",
-      "field": "created_at",
-      "type": "DateTime",
-      "arity": "Required"
-    },
-    {
-      "tag": "CreateDirective",
-      "location": {
-        "path": {
-          "tag": "Field",
-          "model": "Post",
-          "field": "created_at"
-        },
-        "directive": "default"
-      }
-    },
-    {
-      "tag": "CreateArgument",
-      "location": {
-        "tag": "Directive",
-        "path": {
-          "tag": "Field",
-          "model": "Post",
-          "field": "created_at"
-        },
-        "directive": "default"
-      },
-      "argument": "",
-      "value": "now()"
-    },
-    {
-      "tag": "CreateField",
-      "model": "Post",
-      "field": "updated_at",
-      "type": "DateTime",
-      "arity": "Required"
-    },
-    {
-      "tag": "CreateDirective",
-      "location": {
-        "path": {
-          "tag": "Field",
-          "model": "Post",
-          "field": "updated_at"
-        },
-        "directive": "default"
-      }
-    },
-    {
-      "tag": "CreateArgument",
-      "location": {
-        "tag": "Directive",
-        "path": {
-          "tag": "Field",
-          "model": "Post",
-          "field": "updated_at"
-        },
-        "directive": "default"
-      },
-      "argument": "",
-      "value": "now()"
-    },
-    {
-      "tag": "CreateField",
-      "model": "Post",
-      "field": "user_id",
+      "field": "authorId",
       "type": "Int",
       "arity": "Required"
     },
     {
       "tag": "CreateField",
       "model": "Post",
-      "field": "User",
+      "field": "author",
       "type": "User",
       "arity": "Required"
     },
@@ -293,7 +229,7 @@
         "path": {
           "tag": "Field",
           "model": "Post",
-          "field": "User"
+          "field": "author"
         },
         "directive": "relation"
       }
@@ -305,12 +241,12 @@
         "path": {
           "tag": "Field",
           "model": "Post",
-          "field": "User"
+          "field": "author"
         },
         "directive": "relation"
       },
       "argument": "fields",
-      "value": "[user_id]"
+      "value": "[authorId]"
     },
     {
       "tag": "CreateArgument",
@@ -319,7 +255,7 @@
         "path": {
           "tag": "Field",
           "model": "Post",
-          "field": "User"
+          "field": "author"
         },
         "directive": "relation"
       },
@@ -329,7 +265,7 @@
     {
       "tag": "CreateField",
       "model": "Post",
-      "field": "Category",
+      "field": "categories",
       "type": "Category",
       "arity": "List"
     },
@@ -339,7 +275,7 @@
         "path": {
           "tag": "Field",
           "model": "Post",
-          "field": "Category"
+          "field": "categories"
         },
         "directive": "relation"
       }
@@ -351,7 +287,7 @@
         "path": {
           "tag": "Field",
           "model": "Post",
-          "field": "Category"
+          "field": "categories"
         },
         "directive": "relation"
       },
@@ -359,20 +295,9 @@
       "value": "[id]"
     },
     {
-      "tag": "CreateModel",
-      "model": "User"
-    },
-    {
       "tag": "CreateField",
-      "model": "User",
-      "field": "avatar",
-      "type": "String",
-      "arity": "Optional"
-    },
-    {
-      "tag": "CreateField",
-      "model": "User",
-      "field": "created_at",
+      "model": "Post",
+      "field": "createdAt",
       "type": "DateTime",
       "arity": "Required"
     },
@@ -381,8 +306,76 @@
       "location": {
         "path": {
           "tag": "Field",
+          "model": "Post",
+          "field": "createdAt"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Post",
+          "field": "createdAt"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "now()"
+    },
+    {
+      "tag": "CreateField",
+      "model": "Post",
+      "field": "updatedAt",
+      "type": "DateTime",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "Post",
+          "field": "updatedAt"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "Post",
+          "field": "updatedAt"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "now()"
+    },
+    {
+      "tag": "CreateModel",
+      "model": "User"
+    },
+    {
+      "tag": "CreateField",
+      "model": "User",
+      "field": "id",
+      "type": "Int",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
           "model": "User",
-          "field": "created_at"
+          "field": "id"
         },
         "directive": "default"
       }
@@ -394,12 +387,37 @@
         "path": {
           "tag": "Field",
           "model": "User",
-          "field": "created_at"
+          "field": "id"
         },
         "directive": "default"
       },
       "argument": "",
-      "value": "now()"
+      "value": "autoincrement()"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "User",
+          "field": "id"
+        },
+        "directive": "id"
+      }
+    },
+    {
+      "tag": "CreateField",
+      "model": "User",
+      "field": "firstName",
+      "type": "String",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateField",
+      "model": "User",
+      "field": "lastName",
+      "type": "String",
+      "arity": "Required"
     },
     {
       "tag": "CreateField",
@@ -454,64 +472,21 @@
     {
       "tag": "CreateField",
       "model": "User",
-      "field": "first_name",
+      "field": "avatar",
       "type": "String",
-      "arity": "Required"
+      "arity": "Optional"
     },
     {
       "tag": "CreateField",
       "model": "User",
-      "field": "id",
-      "type": "Int",
-      "arity": "Required"
-    },
-    {
-      "tag": "CreateDirective",
-      "location": {
-        "path": {
-          "tag": "Field",
-          "model": "User",
-          "field": "id"
-        },
-        "directive": "default"
-      }
-    },
-    {
-      "tag": "CreateArgument",
-      "location": {
-        "tag": "Directive",
-        "path": {
-          "tag": "Field",
-          "model": "User",
-          "field": "id"
-        },
-        "directive": "default"
-      },
-      "argument": "",
-      "value": "autoincrement()"
-    },
-    {
-      "tag": "CreateDirective",
-      "location": {
-        "path": {
-          "tag": "Field",
-          "model": "User",
-          "field": "id"
-        },
-        "directive": "id"
-      }
+      "field": "posts",
+      "type": "Post",
+      "arity": "List"
     },
     {
       "tag": "CreateField",
       "model": "User",
-      "field": "last_name",
-      "type": "String",
-      "arity": "Required"
-    },
-    {
-      "tag": "CreateField",
-      "model": "User",
-      "field": "updated_at",
+      "field": "createdAt",
       "type": "DateTime",
       "arity": "Required"
     },
@@ -521,7 +496,7 @@
         "path": {
           "tag": "Field",
           "model": "User",
-          "field": "updated_at"
+          "field": "createdAt"
         },
         "directive": "default"
       }
@@ -533,7 +508,7 @@
         "path": {
           "tag": "Field",
           "model": "User",
-          "field": "updated_at"
+          "field": "createdAt"
         },
         "directive": "default"
       },
@@ -543,9 +518,34 @@
     {
       "tag": "CreateField",
       "model": "User",
-      "field": "Post",
-      "type": "Post",
-      "arity": "List"
+      "field": "updatedAt",
+      "type": "DateTime",
+      "arity": "Required"
+    },
+    {
+      "tag": "CreateDirective",
+      "location": {
+        "path": {
+          "tag": "Field",
+          "model": "User",
+          "field": "updatedAt"
+        },
+        "directive": "default"
+      }
+    },
+    {
+      "tag": "CreateArgument",
+      "location": {
+        "tag": "Directive",
+        "path": {
+          "tag": "Field",
+          "model": "User",
+          "field": "updatedAt"
+        },
+        "directive": "default"
+      },
+      "argument": "",
+      "value": "now()"
     }
   ]
 }

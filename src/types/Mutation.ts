@@ -17,8 +17,8 @@ export const Mutation = mutationType({
                 const hashedPassword = await hash(password, 10);
                 const user = await ctx.prisma.user.create({
                     data: {
-                        first_name: firstName,
-                        last_name: lastName,
+                        firstName,
+                        lastName,
                         email,
                         password: hashedPassword,
                     },
@@ -56,6 +56,8 @@ export const Mutation = mutationType({
                 }
             },
         });
+
+        t.crud.createOnePost();
 
         t.field('deletePost', {
             type: 'Post',

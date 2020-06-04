@@ -1,5 +1,6 @@
 import { intArg, queryType, stringArg } from 'nexus'
 import { getUserId } from '../utils'
+import moment from 'moment';
 
 export const Query = queryType({
     definition(t) {
@@ -20,11 +21,11 @@ export const Query = queryType({
         t.list.field('myPosts', {
             type: 'Post',
             args: {
-                userId: intArg({ nullable: false }),
+                authorId: intArg({nullable: false}),
             },
-            resolve: (parent, { userId }, ctx) => {
+            resolve: (parent, { authorId }, ctx) => {
                 return ctx.prisma.post.findMany({
-                    where: { user_id: userId },
+                    where: { authorId },
                 })
             },
         });
@@ -33,11 +34,11 @@ export const Query = queryType({
             type: 'Post',
             resolve: (parent, args, ctx) => {
                 return ctx.prisma.post.findMany({
-                    where: { public: true },
+                    where: {public: true},
                 })
             },
         });
 
         t.crud.categories();
-    },
+    }
 });

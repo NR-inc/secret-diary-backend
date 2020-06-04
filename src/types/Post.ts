@@ -7,8 +7,8 @@ module.exports.Post = objectType({
         t.model.public();
         t.model.title();
         t.model.text();
-        t.model.user_id();
-        t.model.created_at();
-        t.model.updated_at();
+        t.model.author();
+        t.model.createdAt();
+        t.model.updatedAt();
     },
 });
