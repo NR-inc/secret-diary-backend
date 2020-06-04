@@ -5,3 +5,5 @@ setup:
 build:
   docker:
     web: Dockerfile
+run:
+  web: npm run postinstall && prisma migrate up --experimental && npm run dev
