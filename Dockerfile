@@ -10,4 +10,4 @@ COPY . ./
 
 RUN chmod +x start.sh
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["start.sh"]
