@@ -10,4 +10,4 @@ COPY . ./
 
 RUN chmod +x start.sh
 
-ENTRYPOINT ["start.sh"]
+CMD [ "bash","-x","start.sh" ]
