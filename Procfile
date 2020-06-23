@@ -1,1 +1,0 @@
-web: npm install && npx prisma migrate up --experimental && npm run build && npm run dev
