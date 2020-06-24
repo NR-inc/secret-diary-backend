@@ -1,5 +1,5 @@
 import 'package:grpc/grpc.dart';
-import 'package:secret_diary_backend/src/generated/auth/login/login.pbgrpc.dart';
+import 'package:proto_module/protos.dart';
 
 class LoginService extends LoginServiceBase {
   @override

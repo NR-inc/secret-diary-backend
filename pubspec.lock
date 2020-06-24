@@ -2,7 +2,7 @@
 # See https://dart.dev/tools/pub/glossary#lockfile
 packages:
   async:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: async
       url: "https://pub.dartlang.org"
@@ -51,7 +51,7 @@ packages:
     source: hosted
     version: "0.2.12"
   grpc:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: grpc
       url: "https://pub.dartlang.org"
@@ -99,8 +99,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.9.0"
-  protobuf:
+  proto_module:
     dependency: "direct main"
+    description:
+      path: proto_module
+      relative: true
+    source: path
+    version: "0.0.1"
+  protobuf:
+    dependency: transitive
     description:
       name: protobuf
       url: "https://pub.dartlang.org"

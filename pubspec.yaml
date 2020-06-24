@@ -6,6 +6,5 @@ environment:
 
 dependencies:
 
-  async: ^2.2.0
-  grpc:  ^2.2.0
-  protobuf: ^1.0.1
+  proto_module:
+    path: proto_module
