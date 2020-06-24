@@ -1,16 +1,11 @@
 name: secret_diary_backend
-description: A new Flutter package project.
 version: 0.0.1
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-  flutter:
-    sdk: flutter
 
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-
-flutter:
+  async: ^2.2.0
+  grpc:  ^2.2.0
+  protobuf: ^1.0.1
