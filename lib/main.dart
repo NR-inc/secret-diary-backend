@@ -1,15 +1,15 @@
 import 'package:grpc/grpc.dart';
-import 'package:proto_module/protos.dart';
-
-class LoginService extends LoginServiceBase {
-  @override
-  Future<LoginResponse> login(ServiceCall call, LoginRequest request) async {
-    return LoginResponse.create()..token = 'test token';
-  }
-}
+import 'package:secret_diary_backend/secret_diary_backend.dart';
 
 Future<void> main(List<String> args) async {
-  final server = Server([LoginService()]);
+  await init();
+  final server = Server([AuthService()]);
   await server.serve(port: 50051);
+
   print('Server listening on port ${server.port}...');
+}
+
+// ignore: missing_return
+Future<void> init(){
+  InjectModule();
 }
