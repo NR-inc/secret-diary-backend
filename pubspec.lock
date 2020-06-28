@@ -110,8 +110,10 @@ packages:
     dependency: "direct main"
     description:
       path: proto_module
-      relative: true
-    source: path
+      ref: "dart-grpc/develop"
+      resolved-ref: "92ff030cd18a4322d4bbedfd4ba83b7fa2431afd"
+      url: "https://github.com/NR-inc/secret-diary-backend.git"
+    source: git
     version: "0.0.1"
   protobuf:
     dependency: transitive

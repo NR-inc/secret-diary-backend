@@ -9,4 +9,7 @@ dependencies:
   flutter_simple_dependency_injection: ^1.0.2+1
 
   proto_module:
-    path: proto_module
+    git:
+      url: https://github.com/NR-inc/secret-diary-backend.git
+      ref: dart-grpc/develop
+      path: proto_module
