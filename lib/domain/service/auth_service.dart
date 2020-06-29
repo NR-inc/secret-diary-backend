@@ -8,14 +8,14 @@ class AuthService extends AuthServiceBase {
   }
 
   @override
-  Future<LogoutResponse> logout(ServiceCall call, LogoutRequest request) {
-    // TODO: implement logout
-    throw UnimplementedError();
+  Future<LogoutResponse> logout(ServiceCall call, LogoutRequest request) async {
+    call.headers['Authorization'];
+    return LogoutResponse.create();
   }
 
   @override
-  Future<RegistrationResponse> registration(ServiceCall call, RegistrationRequest request) {
-    // TODO: implement registration
-    throw UnimplementedError();
+  Future<RegistrationResponse> registration(
+      ServiceCall call, RegistrationRequest request) async {
+    return RegistrationResponse.create()..token = 'test token';
   }
 }
