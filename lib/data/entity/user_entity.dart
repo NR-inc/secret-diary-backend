@@ -1,6 +1,5 @@
 class UserEntity {
   String id;
-  String token;
   String firstName;
   String lastName;
   String email;

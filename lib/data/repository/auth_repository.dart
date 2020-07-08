@@ -1,18 +1,18 @@
-import 'package:proto_module/protos.dart';
+import 'package:secret_diary_backend/data/entity/user_entity.dart';
 
 class AuthRepository {
-  Future<String> login(LoginRequest request) async{
-    print('login: ${request.writeToJson()}');
-    return 'test token';
+
+
+  Future<UserEntity> createUser(
+    String firstName,
+    String lastName,
+    String email,
+    String password,
+  ) async {
+
   }
 
-  Future<String> registration(RegistrationRequest request) async{
-    print('registration: ${request.writeToJson()}');
-    return 'test token';
-  }
+  Future<UserEntity> getUserByEmail(String email) async {
 
-  Future<bool> logout(LogoutRequest request) async{
-    print('logout: ${request.writeToJson()}');
-    return true;
   }
 }

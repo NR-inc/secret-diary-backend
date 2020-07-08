@@ -6,6 +6,11 @@ environment:
 
 dependencies:
 
+  args: ^1.4.2
+  shelf: ^0.7.2
+  dotenv: ^1.0.0
+  jaguar_jwt: ^2.1.6
+
   flutter_simple_dependency_injection: ^1.0.2+1
 
   proto_module:
