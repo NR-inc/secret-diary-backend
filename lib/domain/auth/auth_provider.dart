@@ -60,6 +60,10 @@ class AuthProvider {
   /// returns email by token if it correct and did not expire
   /// use for not auth requests
   Future<String> getPayload(String token) async {
+    if (blackList.indexOf(token) != -1) {
+      throw Exception('Invalid authorize token');
+    }
+
     final JwtClaim decClaimSet = verifyJwtHS256Signature(token, _secret);
     decClaimSet.validate(issuer: _issuer, audience: _audience.first);
     print('payload subject: ${decClaimSet.subject}');
@@ -68,7 +72,12 @@ class AuthProvider {
 
   // todo implement or remove method
   Future<bool> invalidateToken(String token) async {
-    return true;
+    final index = blackList.indexOf(token);
+    if (index == -1) {
+      blackList.add(token);
+      return true;
+    }
+    return false;
   }
 
   Future scheduleBlackListCleaning() async {

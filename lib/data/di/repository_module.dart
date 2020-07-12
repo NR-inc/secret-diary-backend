@@ -14,6 +14,9 @@ class RepositoryModule extends AbstractModule {
 
   @override
   void configure(Injector injector) {
-    injector.map((i) => AuthRepository(), isSingleton: true);
+    injector.map(
+      (i) => AuthRepository(i.get()),
+      isSingleton: true,
+    );
   }
 }

@@ -20,7 +20,7 @@ class ServiceModule extends AbstractModule {
     );
 
     injector.map(
-      (i) => AuthService(authProvider: i.get()),
+      (i) => AuthService(authProvider: i.get(), authRepository: i.get()),
       isSingleton: true,
     );
   }

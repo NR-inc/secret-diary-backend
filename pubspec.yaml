@@ -10,6 +10,7 @@ dependencies:
   shelf: ^0.7.2
   dotenv: ^1.0.0
   jaguar_jwt: ^2.1.6
+  postgres: 2.1.1
 
   flutter_simple_dependency_injection: ^1.0.2+1
 
